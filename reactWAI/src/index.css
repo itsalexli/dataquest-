@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.top-logo {
+  width: 8%; /* Adjusted for better visibility on smaller screens */
+  max-width: 100%;
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 4vw; /* Adjusts padding dynamically for all screen sizes */
+  padding-top: 5vh;
+  position: relative;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem; /* Adjust spacing between links for responsiveness */
+}
+
+.nav a {
+  color: #ffffff;
+  font-size: 1.2rem; /* Slightly larger base font size */
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem; /* Slightly increased spacing for clarity */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffd700; /* Gold color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.nav a:active {
+  color: #ff4500; /* Reddish color when active */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .nav ul {
+    gap: 3rem;
+  }
+
+  .nav a {
+    font-size: 1.5rem; /* Larger text on large screens */
+  }
+
+  .top-logo {
+    width: 5%;
+  }
+
+  .pagehome-img {
+    padding-left: 10vh;
+    padding-top: 15vh;
+
+    width: 80%;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stacks logo and navigation vertically */
+    padding: 2vh;
+    padding-top: 4vh;
+  }
+
+  .top-logo {
+    position: static; /* Centers the logo above the navigation */
+    margin-bottom: 1rem;
+    width: 10%;
+  }
+
+  .nav ul {
+    margin-top: 1vh;
+    flex-direction: column; /* Stacks navigation links vertically */
+    gap: 1.8rem; /* Slightly increased gap for vertical stacking */
+  }
+
+  .nav a {
+    font-size: 1.5rem; /* Larger text for small screens */
+  }
+}
