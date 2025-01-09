@@ -7,6 +7,7 @@ import PageHome from "./PageHome";
 import BigLogo from "./assets/waibiglogo.png";
 import PageFAQ from "./PageFAQ";
 import LastYear from "./LastYear";
+import Sponsors from './Sponsors';
 
 function Dataquest() {
   return (
@@ -19,10 +20,6 @@ function Dataquest() {
 
 function FAQ() {
   return <PageFAQ />;
-}
-
-function Sponsors() {
-  return <div>Meet our sponsors!</div>;
 }
 
 function App() {
