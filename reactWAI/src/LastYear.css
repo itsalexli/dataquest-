@@ -1,0 +1,249 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 4vw; /* Adjusts padding dynamically for all screen sizes */
+    position: relative;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem; /* Adjust spacing between links for responsiveness */
+  }
+  
+  .nav a {
+    color: #ffffff;
+    font-size: 1.2rem; /* Slightly larger base font size */
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem; /* Slightly increased spacing for clarity */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .nav a:active {
+    color: #ff4500; /* Reddish color when active */
+  }
+
+.bold-link {
+    font-weight: bold; 
+}
+
+.smalllogo {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 60px;
+}
+
+h1 {
+    position: absolute;
+    font-family: Inter;
+    border-style: none;
+    color: white;
+    top: 140px;
+    left: 150px;
+    animation: fadeInUp 1.5s ease-out forwards;
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.main-scroll-div {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #29202f;
+    animation: fadeInUp 1.5s ease-out forwards;
+    margin-top: 40px;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: -2000px;
+}
+
+.scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    scrollbar-width: none;
+}
+
+.child {
+    min-width: 800px;
+    height: 550px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.child-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.child-img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.355);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        left: 0;
+        top: 0;
+    }
+
+    .nav-links {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        left: 10px;
+    }
+
+    .main-scroll-div {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .child {
+        min-width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        padding-left: 50px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .main-scroll-div {
+        width: 80%;
+        height: auto;
+    }
+
+    .child {
+        min-width: 400px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 30px;
+    }
+
+    .nav-links {
+        padding-left: 250px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .main-scroll-div {
+        width: 90%;
+        height: 85%;
+    }
+
+    .child {
+        min-width: 800px;
+    }
+}

@@ -23,7 +23,7 @@ function PageFAQ() {
           <button
             onClick={() =>
               handleButtonClick(
-                "DataQuest is an AI hackathon! DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!DataQuest is an AI hackathon!"
+                "DataQuest is a week-long hackathon where students apply technical skills to solve real-world, data-centric challenges using tools like Excel or Python. The event includes workshops and talks from industry professionals, a case competition with presentations, and networking opportunities through booths and coffee chats with company representatives. It's an exciting platform for exploring data science, connecting with industry leaders, and building innovative solutions."
               )
             }
           >
@@ -32,7 +32,7 @@ function PageFAQ() {
           <button
             onClick={() =>
               handleButtonClick(
-                "Anyone with an interest in AI can participate."
+                "The event is open to students from all across North America, regardless of experience level."
               )
             }
           >
@@ -41,7 +41,7 @@ function PageFAQ() {
           <button
             onClick={() =>
               handleButtonClick(
-                "No prior experience or team is needed to join."
+                "The event is open to students from all across North America, regardless of experience level."
               )
             }
           >
@@ -49,7 +49,7 @@ function PageFAQ() {
           </button>
           <button
             onClick={() =>
-              handleButtonClick("Expect engaging workshops and networking.")
+              handleButtonClick("No, you don't! Teams can be formed during the event (teams of 4 are recommended), and prior experience isn't required. This is an excellent opportunity to learn, collaborate, and grow alongside others!")
             }
           >
             What can I expect at DataQuest?
@@ -57,7 +57,7 @@ function PageFAQ() {
           <button
             onClick={() =>
               handleButtonClick(
-                "DataQuest will take place at Western University."
+                "DataQuest will take place at the University of Western Ontario campus. The event will combine online and in-person activities. Day 0 (lead-up) and Day 4 (judging and closing ceremony) will be online, while Days 1-3 will be held in person at Western University, featuring workshops, networking booths, and the project showcase."
               )
             }
           >
