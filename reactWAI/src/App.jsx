@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
 import Helmet from "react-helmet";
 import Navbar from "./Navbar";
@@ -7,7 +12,7 @@ import PageHome from "./PageHome";
 import BigLogo from "./assets/waibiglogo.png";
 import PageFAQ from "./PageFAQ";
 import LastYear from "./LastYear";
-import Sponsors from './Sponsors';
+import Sponsors from "./Sponsors";
 
 function Dataquest() {
   return (
@@ -33,6 +38,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Navigate to="/dataquest" />} />
           <Route path="/dataquest" element={<Dataquest />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/last-year" element={<LastYear />} />
