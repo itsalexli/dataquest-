@@ -1,11 +1,13 @@
 .pagehome-img {
   padding-left: 10vh;
   padding-top: 15vh;
+  animation: fadeInUp 1.5s ease-out forwards;
 
   width: 90%;
 }
 
 .description {
+  animation: fadeInUp 1.5s ease-out forwards;
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 2.5rem;
@@ -14,6 +16,7 @@
 }
 
 .date {
+  animation: fadeInUp 1.5s ease-out forwards;
   font-family: "Inter", sans-serif;
   color: white;
   font-weight: 800;
@@ -23,6 +26,7 @@
 }
 
 .big-logo {
+  animation: fadeInUp 1.5s ease-out forwards;
   width: 50%;
   height: 50%;
   padding-top: 8vh;
@@ -30,6 +34,17 @@
 
 .home-container {
   display: flex;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Media Queries for Responsiveness */
@@ -70,6 +85,4 @@
     padding-right: 10%;
     width: 90%;
   }
-
-  
 }

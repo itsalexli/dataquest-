@@ -1,5 +1,6 @@
 /* General Styles */
 .window {
+  animation: fadeInUp 1.5s ease-out forwards;
   margin: auto;
   display: flex;
   width: 80%;
